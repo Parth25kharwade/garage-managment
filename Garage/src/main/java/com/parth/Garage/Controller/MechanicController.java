@@ -7,6 +7,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/mechanics")
+@CrossOrigin(origins = "http://127.0.0.1:5173/")
+
 public class MechanicController {
     private final MechanicService service;
     public MechanicController(MechanicService service){ this.service = service; }

@@ -8,6 +8,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/vehicles")
+@CrossOrigin(origins = "http://127.0.0.1:5173/")
+
 public class VehicleController {
     private final VehicleService service;
     public VehicleController(VehicleService service){ this.service = service; }
